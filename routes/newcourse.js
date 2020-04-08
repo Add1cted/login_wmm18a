@@ -4,7 +4,6 @@ const mysqlConnection = require("../data/connection");
 
 const { check, validationResult } = require("express-validator");
 
-// localhost:3000/courses
 
 module.exports = params => {
   router.get("/", async (request, response, next) => {

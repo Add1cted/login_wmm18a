@@ -3,6 +3,7 @@ const express = require("express");
 const coursesRoute = require("./courses");
 const prereqsRoute = require("./prereqs");
 const newcourseRoute = require("./newcourse");
+const loginRoute = require("./login");
 const router = express.Router();
 
 module.exports = params => {
@@ -22,6 +23,7 @@ module.exports = params => {
   router.use("/courses", coursesRoute(params));
   router.use("/prereqs", prereqsRoute(params));
   router.use("/newcourse", newcourseRoute(params));
+  router.use("/login", loginRoute(params));
 
   return router;
 };

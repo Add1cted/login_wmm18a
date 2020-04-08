@@ -2,8 +2,6 @@ const express = require("express");
 const router = express.Router();
 const mysqlConnection = require("../data/connection");
 
-// localhost:3000/prereqs
-
 module.exports = params => {
   router
     .get("/", async (request, response) => {
